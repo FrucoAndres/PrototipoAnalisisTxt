@@ -1,0 +1,130 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ddace0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header {
+    background-color: #b96aa8;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.imagen-logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.imagen-logo,
+h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.chat-container {
+    background-color: #b96aa8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 600px;
+    max-width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat-box input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.chat-box button {
+    padding: 10px 20px;
+    background-color: #9370db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat-box button:hover {
+    background-color: #7b68ee;
+}
+.message {
+    margin-bottom: 10px;
+    clear: both;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column; /* Cambiar la dirección del flex a columna */
+}
+
+.user-message {
+    background-color: #ffd1dc;
+    border-radius: 15px;
+    padding: 10px;
+    max-width: 70%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column; /* Asegurar que el contenido y la hora estén en columna */
+}
+
+.doctor-message {
+    background-color: #d1c4e9;
+    border-radius: 15px;
+    padding: 10px;
+    max-width: 70%;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column; /* Asegurar que el contenido y la hora estén en columna */
+}
+
+.message-time {
+    font-size: 0.8em;
+    color: #555;
+    align-self: flex-end; /* Alinear la hora a la derecha */
+    margin-top: 5px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
